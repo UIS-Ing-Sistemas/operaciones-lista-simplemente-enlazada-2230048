@@ -22,9 +22,9 @@ class ListaSE:
         return
       else:
         last = self.head
-        while(ultimo.next):
+        while(last.next):
           last = last.next
-          last.next = nuevo_nodo
+        last.next = nuevo_nodo
     def EliminarPrimero(self):
       temp = self.head
       if self.head is None:
@@ -32,20 +32,34 @@ class ListaSE:
       else:
         self.head = temp.next
         temp = None
-   def EliminarUltimo(self.head):
+   def EliminarUltimo(self):
      if self.head is None:
        return
      if self.head.next = None:
        self.head = None
-       return None
+       return 
      else:
-       second_last = self.had
+       second_last = self.head
         while(second_last.next.next):
           second_last = second_last.next 
         second_last.next = None
        return
-          
-       
-        
-        
+    def BuscarElemento(self, value):
+      temp = self.head
+        while(temp != None):
+          if temp.data == value:
+            return True
+            temp = temp.next
+        return False
+    def ContarElementos(self):
+      i=0
+      temp = self.head
+        while(temp != None):
+          i == i++
+          return i
+    def ListaVacia(self):
+      if self.head is None:
+        return True
+      else return False
+
   

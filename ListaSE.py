@@ -63,3 +63,8 @@ class ListaSE:
       else return False
 
   
+ListaSE = ListaSE()
+ListaSE.AgregarInicio(1)
+ListaSE.AgregarInicio(5)
+ListaSE.AgregarInicio(9)
+ListaSE.AgregarInicio(20)
